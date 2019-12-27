@@ -7,13 +7,17 @@ public class animationScript : MonoBehaviour
 {
     private Transform Hip;
     private Transform LeftLeg;
+    private Transform LeftKnee;
     private Transform RightLeg;
+    private Transform RightKnee;
 
     void Start()
     {
         Hip = transform.Find("Armature").Find("Hips");
         LeftLeg = Hip.Find("Left leg");
+        LeftKnee = LeftLeg.Find("Left knee");
         RightLeg = Hip.Find("Right leg");
+        RightKnee = RightLeg.Find("Right knee");
     }
 
     void FixedUpdate()
@@ -22,7 +26,10 @@ public class animationScript : MonoBehaviour
 
         float pendulum = (float)Math.Sin(Time.time * Math.PI);
         float minusValue = 60 * pendulum;
-        LeftLeg.rotation = Quaternion.AngleAxis(-180.0f + minusValue, RotateAxis);
-        RightLeg.rotation = Quaternion.AngleAxis(180.0f - minusValue, RotateAxis);
+        LeftLeg.rotation = Quaternion.AngleAxis(-180.0f + minusValue - 20.0f, RotateAxis);
+        RightLeg.rotation = Quaternion.AngleAxis(180.0f - minusValue - 20.0f, RotateAxis);
+
+        LeftKnee.rotation = Quaternion.AngleAxis(-180.0f + minusValue + minusValue / 2, RotateAxis);
+        RightKnee.rotation = Quaternion.AngleAxis(180.0f - minusValue - minusValue / 2, RotateAxis);
     }
 }
