@@ -1,0 +1,41 @@
+ManifestFileVersion: 0
+CRC: 738923960
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: a5817af0de71a15ab13f43583831d845
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 8683c9fccd1542e3a140d908652496bd
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 65
+  Script: {instanceID: 0}
+- Class: 74
+  Script: {instanceID: 0}
+- Class: 91
+  Script: {instanceID: 0}
+- Class: 95
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: 1b1aad9cfe437ee43b92f3102d3c6b14, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+Assets:
+- Assets/AssetBundleTest/blueCube.prefab
+- Assets/AssetBundleTest/redCube.prefab
+- Assets/AssetBundleTest/greenCube.prefab
+Dependencies:
+- C:/Users/kazuki/UnityLearning/UnityLearning/./Build01/abmaterial

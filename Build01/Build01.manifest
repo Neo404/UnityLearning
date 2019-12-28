@@ -1,0 +1,11 @@
+ManifestFileVersion: 0
+CRC: 1394368625
+AssetBundleManifest:
+  AssetBundleInfos:
+    Info_0:
+      Name: abmaterial
+      Dependencies: {}
+    Info_1:
+      Name: abprefab
+      Dependencies:
+        Dependency_0: abmaterial
